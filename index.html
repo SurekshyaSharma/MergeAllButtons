@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+ 
+<html lang="en"> 
+ 
+    <head> 
+        <meta charset="UTF-8"> 
+        <title>Button Interaction</title> 
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ 
+        <!-- Adding CSS stilling to HTML  --> 
+        <link rel="stylesheet" href="./style.css"> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> 
+ 
+        <!-- Connectiing Scripts to HTML  --> 
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+ 
+        <!-- Connecting javascript files --> 
+        <script type="text/javascript" src="./main.js"></script> 
+
+       
+    </head> 
+ 
+    <body> 
+ 
+        <div class="container" >  
+
+            <div>
+            <h2 align='center'>See the button interaction</h2><br><br>
+            <a href="' + value.eventUrl + '" target="_blank" style="font-weight: bold; color: black;">
+            <button id="btnRegister"><span>ShowAll</span></button>
+            </a>
+            <a href="' + value.eventUrl + '" target="_blank" style="font-weight: bold; color: black;">
+            <input id="clickMe" type="button" value="Animals" onclick="doFunction();" />
+            </a>
+            <a href="' + value.eventUrl + '" target="_blank" style="font-weight: bold; color: black;">
+            <input id="clickMe" type="button" value="Fruits" onclick="doFunction();" /
+            </a>
+            <a href="' + value.eventUrl + '" target="_blank" style="font-weight: bold; color: black;">
+            <input id="clickMe" type="button" value="Vegetables" onclick="doFunction();" />
+            </a>
+                
+            <div id=showData>
+                
+            </div>
+            </div>
+
+          
+ 
+        </div> 
+          
+    </body> 
+ 
+</html> 
