@@ -29,21 +29,21 @@
 
             <div>
             <h2 align='center'>See the button interaction</h2><br><br>
-            <a href="' + value.eventUrl + '" target="_blank" style="font-weight: bold; color: black;">
-            <button id="btnRegister"><span>ShowAll</span></button>
-            </a>
-            <a href="' + value.eventUrl + '" target="_blank" style="font-weight: bold; color: black;">
-            <input id="clickMe" type="button" value="Animals" onclick="doFunction();" />
-            </a>
-            <a href="' + value.eventUrl + '" target="_blank" style="font-weight: bold; color: black;">
-            <input id="clickMe" type="button" value="Fruits" onclick="doFunction();" /
-            </a>
-            <a href="' + value.eventUrl + '" target="_blank" style="font-weight: bold; color: black;">
-            <input id="clickMe" type="button" value="Vegetables" onclick="doFunction();" />
-            </a>
-                
+
+            <button class="btn-group-xs"><span>ShowAll</span></button>  
+            <br><br>
+
+            <button class="btn-group-xs" onclick="Animals();"><span>Animals</span></button> 
+            <br><br>
+            
+          
+            <button class="btn-group-xs" ><span>Fruits</span></button> 
+        
+            <br><br>
+           
+            <button class="btn-group-xs"><span>Vegetables</span></button> 
+            
             <div id=showData>
-                
             </div>
             </div>
 

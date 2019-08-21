@@ -1,13 +1,18 @@
-$(document).ready( 
-  
-   
-)
-function showAnimals() {
+$(document).ready(function () {
+    Animals();
+    Fruits();
+    Vegetables()
+});
+function Animals() {
+    //$("#showData".empty());
+    $("#showData".append('Cat'));
 
 }
-function showFruits() {
+function Fruits() {
+    $("#showData".empty());
 
 }
-function showVegetables() {
+function Vegetables() {
+    $("#showData".empty());
 
 }
