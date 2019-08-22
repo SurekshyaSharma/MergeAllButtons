@@ -11,6 +11,7 @@
         <!-- Adding CSS stilling to HTML  --> 
         <link rel="stylesheet" href="./style.css"> 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  
         <!-- Connectiing Scripts to HTML  --> 
         <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script> 
@@ -20,7 +21,6 @@
         <!-- Connecting javascript files --> 
         <script type="text/javascript" src="./main.js"></script> 
 
-       
     </head> 
  
     <body> 
@@ -28,27 +28,29 @@
         <div class="container" >  
 
             <div>
-            <h2 align='center'>See the button interaction</h2><br><br>
+                <h2 align='center'>See the button interaction</h2><br><br>
+                <button class="btn-group-xs" onclick="Animals();"><span>Animals</span></button> 
+                <br><br>
 
-            <button class="btn-group-xs"><span>ShowAll</span></button>  
-            <br><br>
+                <button class="btn-group-xs" onclick="Fruits();"><span>Fruits</span></button> 
+                <br><br>
 
-            <button class="btn-group-xs" onclick="Animals();"><span>Animals</span></button> 
-            <br><br>
-            
-          
-            <button class="btn-group-xs" ><span>Fruits</span></button> 
-        
-            <br><br>
-           
-            <button class="btn-group-xs"><span>Vegetables</span></button> 
-            
-            <div id=showData>
-            </div>
+                <button class="btn-group-xs" onclick="Vegetables();"><span>Vegetables</span></button> 
+                <br><br>
+
+                <button class="btn-group-xs" onclick="Merge();"><span>Merge</span></button> 
+                <div id=showData> </div>
+                <div id = mergeValue> </div>
             </div>
 
-          
- 
+            <div class="icon-bar">
+                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+                    <a href="#" class="google"><i class="fa fa-google"></i></a> 
+                    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                    <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+            </div>
+
         </div> 
           
     </body> 
