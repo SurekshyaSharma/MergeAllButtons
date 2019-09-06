@@ -1,142 +1,58 @@
-<script src="https://www.google.com/recaptcha/api.js"></script>
-<div class="form">
-<form data-abide name="form1" method="post" action="https://wmsforms.aws.stthomas.edu/process/processMultipart.jsp" enctype="multipart/form-data" onsubmit="document.getElementById('busyImage').style.display=''">
-<input type="hidden" name="formid" value="3529">
-<div class="row">
-<div class="large-12 columns"><label for="FirstName">First Name <small>Required</small></label></div>
-<div class="large-12 columns"><input type="text" name="FirstName" id="FirstName" required autofocus tabindex="1" pattern="">
-<small class="error">First Name is a required field.</small></div>
-</div>
-<div class="row">
-<div class="large-12 columns"><label for="LastName">Last Name <small>Required</small></label></div>
-<div class="large-12 columns"><input type="text" name="LastName" id="LastName" required tabindex="2" pattern="">
-<small class="error">Last Name is a required field.</small></div>
-</div>
-<div class="row">
-<div class="large-12 columns"><label for="DateOfBirth">Month/Day/Year</label></div>
-<div class="large-12 columns"><input type="text" name="DateOfBirth" id="DateOfBirth" placeholder="MM/DD/YYYY" tabindex="3" pattern="number">
-<small class="error">Month/Day/Year must be a valid number</small></div>
-</div>
-<div class="row">
-<div class="large-12 columns"><label for="phoneNumber">Home Phone Number</label></div>
-<div class="large-12 columns"><input type="text" name="phoneNumber" id="phoneNumber" tabindex="4" pattern="number">
-<small class="error">Home Phone Number must be a valid number</small></div>
-</div>
-<div class="row">
-<div class="large-12 columns"><label for="PhoneNumber">Mobile Phone Number</label></div>
-<div class="large-12 columns"><input type="text" name="PhoneNumber" id="PhoneNumber" tabindex="5" pattern="">
-<small class="error"></small></div>
-</div>
-<div class="row">
-<div class="large-12 columns"><label for="City">City</label></div>
-<div class="large-12 columns"><input type="text" name="City" id="City" tabindex="6" pattern="">
-<small class="error"></small></div>
-</div>
-<div class="row">
-<div class="large-12 columns"><label for="State">State</label></div>
-<div class="large-12 columns"><select name="State" id="State" tabindex="7">
-<option value="">Select One</option>
-<option value="AL">AL</option>
-<option value="AK">AK</option>
-<option value="AZ">AZ</option>
-<option value="AR">AR</option>
-<option value="CA">CA</option>
-<option value="CO">CO</option>
-<option value="CT">CT</option>
-<option value="DE">DE</option>
-<option value="DC">DC</option>
-<option value="FL">FL</option>
-<option value="GA">GA</option>
-<option value="HI">HI</option>
-<option value="IA">IA</option>
-<option value="ID">ID</option>
-<option value="IL">IL</option>
-<option value="IN">IN</option>
-<option value="KS">KS</option>
-<option value="KY">KY</option>
-<option value="LA">LA</option>
-<option value="MA">MA</option>
-<option value="MD">MD</option>
-<option value="ME">ME</option>
-<option value="MN">MN</option>
-<option value="MI">MI</option>
-<option value="MO">MO</option>
-<option value="MS">MS</option>
-<option value="MT">MT</option>
-<option value="NC">NC</option>
-<option value="ND">ND</option>
-<option value="NE">NE</option>
-<option value="NH">NH</option>
-<option value="NJ">NJ</option>
-<option value="NM">NM</option>
-<option value="NV">NV</option>
-<option value="NY">NY</option>
-<option value="OK">OK</option>
-<option value="OR">OR</option>
-<option value="OH">OH</option>
-<option value="PA">PA</option>
-<option value="RI">RI</option>
-<option value="SC">SC</option>
-<option value="SD">SD</option>
-<option value="TN">TN</option>
-<option value="TX">TX</option>
-<option value="UT">UT</option>
-<option value="VA">VA</option>
-<option value="VT">VT</option>
-<option value="WA">WA</option>
-<option value="WI">WI</option>
-<option value="WV">WV</option>
-<option value="WY">WY</option>
-</select>
-<small class="error"></small></div>
-</div>
-<div class="row">
-<div class="large-12 columns"><label for="ZipCode">Zip Code</label></div>
-<div class="large-12 columns"><input type="text" name="ZipCode" id="ZipCode" tabindex="8" pattern="number">
-<small class="error">Zip Code must be a valid number</small></div>
-</div>
-<div class="row">
-<div class="large-12 columns"><label for="StudentType">Student Type <small>Required</small></label></div>
-<div class="large-12 columns"><select name="StudentType" id="StudentType" required tabindex="9">
-<option value="">Select One</option>
-<option value="Freshman">Freshman</option>
-<option value="Transfer">Transfer</option>
-</select>
-<small class="error">Student Type is a required field.</small></div>
-</div>
-<div class="row">
-<div class="large-12 columns"><label for="EventType">Which event are you planning to attend?</label></div>
-<div class="large-12 columns"><select name="EventType" id="EventType" tabindex="10">
-<option value="">Select One</option>
-<option value="Offered Monday-Friday: Personalized Visit">Offered Monday-Friday: Personalized Visit</option>
-<option value=" December 8-9, 2019: Tommie Overnight Special Invitation"> December 8-9, 2019: Tommie Overnight Special Invitation</option>
-<option value=" January 25, 2020: Science, Math and Engineering Scholarship Day"> January 25, 2020: Science, Math and Engineering Scholarship Day</option>
-<option value=" February 14-15, 2020: Admitted Tommie Experience"> February 14-15, 2020: Admitted Tommie Experience</option>
-<option value=" February 14-15, 2020: OCB Business Scholarship Day"> February 14-15, 2020: OCB Business Scholarship Day</option>
-<option value=" March 5, 2020 : Residence Life Event"> March 5, 2020 : Residence Life Event</option>
-<option value=" March 13-14, 2020: Admitted Tommie Experience"> March 13-14, 2020: Admitted Tommie Experience</option>
-<option value=" April 17-18, 2020: Admitted Tommie Experience"> April 17-18, 2020: Admitted Tommie Experience</option>
-</select>
-<small class="error"></small></div>
-</div>
-<div class="row">
-<div class="large-12 columns"><label for="VisitDate">Visit Date</label></div>
-<div class="large-12 columns"><input type="text" name="VisitDate" id="VisitDate" tabindex="11" pattern="month_day_year">
-<small class="error">Visit Date must be a valid date (MM/DD/YYYY)</small></div>
-</div>
-<div class="row">
-<div class="large-12 columns"><label for="Email">Email <small>Required</small></label></div>
-<div class="large-12 columns"><input type="text" name="Email" id="Email" required tabindex="12" pattern="email">
-<small class="error">Email must be a valid email address.<br \>Email is a required field.</small></div>
-</div>
-<div class="row">
-<div class="large-12 columns">
-<input type="checkbox" name="submitAgreement" class="radio" id="submitAgreement" value="true;false;" required tabindex="13"><label class="radio" for="submitAgreement">By submitting this request, I understand I am applying for a fly-in voucher and I will receive a response from the Office of Admission within two weeks.</label>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
+<link href="hide-show-fields-form.css" rel="stylesheet"/>
 
-<small class="error">By submitting this request, I understand I am applying for a fly-in voucher and I will receive a response from the Office of Admission within two weeks. is a required field.</small></div>
-</div>
-<input type="hidden" name="s8Echen9" value="">
-<div class="g-recaptcha" data-sitekey="6LeSCQ8UAAAAAFo3fPJzU7BoJq_kytlFAMJRjT1m"></div><input class="button" type="submit" name="submitForm" value="Submit" tabindex="14">
-<img id="busyImage" src="https://wmsforms.aws.stthomas.edu/includes/busy.gif" style="display:none" alt="Waiting">
+
+<form class="p-3">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="name" placeholder="Joe Smith">
+  </div>
+  <div class="form-group">
+    <label for="seeAnotherField">Do You Want To See Another Field?</label>
+    <select class="form-control" id="seeAnotherField">
+          <option value="no">No Way.</option>
+          <option value="yes">Absolutely!</option>
+    </select>
+  </div>
+  <div class="form-group" id="otherFieldDiv">
+    <label for="otherField">Here you go!</label>
+    <select class="form-control" id="otherField">
+      <option>Yay</option>
+      <option>Woo</option>
+      <option>Hazah</option>
+      <option>Yipee</option>
+      <option>Hoorah</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="seeAnotherFieldGroup">Do You Want To See Another Group of Fields?</label>
+    <select class="form-control" id="seeAnotherFieldGroup">
+          <option value="no">Not Particularly.</option>
+          <option value="yes">I Guess!</option>
+    </select>
+  </div>
+  <div class="form-group" id="otherFieldGroupDiv">
+   <div class="row">
+    <div class="col-6">
+      <label for="otherField1">Group: Heres One!</label>
+      <input type="text" class="form-control w-100" id="otherField1">
+    </div>
+    <div class="col-6">
+      <label for="otherField2">Group: Another One!</label>
+      <input type="text" class="form-control w-100" id="otherField2">
+    </div>
+   
+   </div>
+    
+
+  </div>
+  <div class="form-group">
+    <label for="comments">Comments/Questions</label>
+    <textarea class="form-control" id="comments" rows="3"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
 </form>
-</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+<script src="hide-show-fields-form.js"></script>

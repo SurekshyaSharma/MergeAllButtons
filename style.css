@@ -49,3 +49,8 @@ body {margin:0;height:2000px;}
     margin-left: 75px;
     font-size: 30px;
   }
+  form {
+    max-width: 900px;
+    display: block;
+    margin: 0 auto;
+  }
